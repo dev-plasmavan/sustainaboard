@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#8000ADF0</color>
+    <color name="purple_500">#00ADF0</color>
+    <color name="purple_700">#097AA4</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="tab_color">#1e90ff</color>
+    <color name="gray">#c0c0c0</color>
+    <color name="m_blue">#2196F3</color>
+    <color name="m_yellow">#FFEB3B</color>
+    <color name="m_red">#f44336</color>
+    <color name="m_pink">#e91e63</color>
+    <color name="m_purple">#9C27B0</color>
+    <color name="m_deeppurple">#673AB7</color>
+    <color name="m_indigo">#3F51B5</color>
+    <color name="m_lightblue">#03A9F4</color>
+    <color name="c_cyan">#00BCD4</color>
+    <color name="m_teal">#009688</color>
+    <color name="m_green">#4CAF50</color>
+    <color name="m_lightgreen">#8BC34A</color>
+    <color name="m_lime">#CDDC39</color>
+    <color name="m_amber">#FFC107</color>
+    <color name="m_orange">#FF9800</color>
+    <color name="m_deeporange">#FF5722</color>
+    <color name="m_brown">#795548</color>
+    <color name="m_gray">#9E9E9E</color>
+    <color name="m_bluegray">#607D8B</color>
+    <color name="m_black">#000000</color>
+    <color name="title_color">#067aa5</color>
+    <color name="pay_text_color">#ffe2f9</color>
+    <color name="selectedColor">#FFEB3B</color> <!-- 選択されたときの色 -->
+    <color name="unselectedColor">#FFFFFFFF</color> <!-- 非選択状態の色 -->
+
+
+
+</resources>

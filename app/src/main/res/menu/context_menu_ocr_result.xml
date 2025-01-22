@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/kind1"
+        android:title="食料費"/>
+    <item
+        android:id="@+id/kind2"
+        android:title="生活用品"/>
+    <item
+        android:id="@+id/kind3"
+        android:title="衣類"/>
+    <item
+        android:id="@+id/kind4"
+        android:title="交通費"/>
+    <item
+        android:id="@+id/kind5"
+        android:title="通信費"/>
+    <item
+        android:id="@+id/kind6"
+        android:title="光熱費"/>
+    <item
+        android:id="@+id/kind7"
+        android:title="趣味"/>
+    <item
+        android:id="@+id/kind8"
+        android:title="娯楽"/>
+    <item
+        android:id="@+id/kind9"
+        android:title="税"/>
+    <item
+        android:id="@+id/kind10"
+        android:title="その他"/>
+</menu>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.dashboard.DashboardFragment">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="24dp"
+            android:gravity="bottom"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+                android:text="支出一覧"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="24dp"
+                android:padding="24dp"
+                android:id="@+id/paylist"
+                android:background="@drawable/button2_background" />
+
+        <Button
+                android:text="収入一覧"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="24dp"
+                android:padding="24dp"
+                android:id="@+id/incomelist"
+                android:background="@drawable/button3_background" />
+
+        <Button
+                android:text="読み込んだマーク一覧"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="24dp"
+                android:padding="24dp"
+                android:id="@+id/marklist"
+                android:background="@drawable/button4_background" />
+
+        <Button
+                android:text="賞味・消費期限一覧"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="24dp"
+                android:padding="24dp"
+                android:id="@+id/datelist"
+                android:background="@drawable/button5_background" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

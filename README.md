@@ -1,2 +1,5 @@
-# sustainaboard
-A household budgeting application that promotes environmentally friendly consumption activities.
+
+# Sustinaboard
+
+Sustainaboard is a household budgeting application with features for achieving the SDGs and OCR functionality. 
+We will develop it so that it will be easy to use and popular among more people.

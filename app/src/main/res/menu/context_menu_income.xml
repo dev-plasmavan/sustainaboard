@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/kind1"
+        android:title="給料"/>
+    <item
+        android:id="@+id/kind2"
+        android:title="臨時収入"/>
+    <item
+        android:id="@+id/kind3"
+        android:title="お小遣い"/>
+    <item
+        android:id="@+id/kind4"
+        android:title="その他"/>
+</menu>
