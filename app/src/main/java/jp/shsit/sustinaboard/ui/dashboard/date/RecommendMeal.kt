@@ -21,6 +21,8 @@ class RecommendMeal : Fragment() {
 
     private var _binding: FragmentDashboardRecommendMealBinding? = null
 
+    private lateinit var loadingView: View
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -31,7 +33,10 @@ class RecommendMeal : Fragment() {
         val foodContent = arguments?.getString("foodContent")
 
         if (foodContent != null && foodContent != "") {
-            val inputContent: String = "以下の材料で作れる料理を詳しい手順含みで提案してください。: $foodContent"
+            val inputContent: String = "以下の材料のどれか一つまたは複数で作れる料理を詳しい手順含みで提案してください。: $foodContent"
+
+            loadingView = _binding!!.loadingView
+            showLoadingState()
 
             val responseText = _binding!!.responseResult
             generateResponse(inputContent) {
@@ -56,6 +61,14 @@ class RecommendMeal : Fragment() {
         super.onDestroyView()
     }
 
+    private fun showLoadingState() {
+        loadingView.visibility = View.VISIBLE
+    }
+
+    private fun showContentState() {
+        loadingView.visibility = View.GONE
+    }
+
     private fun generateResponse(prompt: String, onResponseReceived: (String) -> Unit) {
         CoroutineScope(Dispatchers.IO).launch {
             val generativeModel = GenerativeModel(
@@ -66,16 +79,9 @@ class RecommendMeal : Fragment() {
             val response: String = generativeModel.generateContent(prompt).text.toString()
 
             withContext(Dispatchers.Main) {
+                showContentState()
                 onResponseReceived(response)
             }
         }
-    }
-
-    private fun generateResponseWithOpenAI(prompt: String) {
-        val openai = OpenAI(
-            token = BuildConfig.apiKey,
-            timeout = Timeout(socket = 60.seconds),
-            // additional configurations...
-        )
     }
 }
