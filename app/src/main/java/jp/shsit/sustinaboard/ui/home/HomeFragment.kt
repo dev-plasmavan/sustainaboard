@@ -92,7 +92,7 @@ class HomeFragment : Fragment() {
         }
 
         viewModel.datecount(date).observe(requireActivity()) { item ->
-            binding.textMarks.text = "今日読み込んだマークの数：" + item.toString() + "個"
+            binding.textMarks.text = "今日の環境ラベルの数：" + item.toString() + "個"
         }
 
         return binding.root

@@ -254,7 +254,7 @@ class SdgsmarksRead : Fragment() {
             if (maxPos < 30) {
                 if (percentage > 85) {
                     AlertDialog.Builder(requireContext())
-                        .setTitle("SDGsマークの読み取り")
+                        .setTitle("環境ラベルの読み取り")
                         .setMessage("マークを読み取りました。\n" + "結果：" + itemArray[maxPos] + "が" + floor(percentage) + "％でした。\n" + "続ける場合は「はい」をタップし、リストから選ぶ場合は「リストから」をタップしてください。")
                         .setView(dialogView)
                         .setPositiveButton("はい") { _, _ ->
@@ -306,7 +306,7 @@ class SdgsmarksRead : Fragment() {
                 }
                 else {
                     AlertDialog.Builder(requireContext())
-                        .setTitle("SDGsマークの読み取り")
+                        .setTitle("環境ラベルの読み取り")
                         .setMessage("マークが読み取れませんでした。再度読み取る場合は「再読取り」をタップし、リストから選ぶ場合は「リストから」をタップしてください。")
 
                         .setPositiveButton("再読取り") { _, _ ->

@@ -41,7 +41,7 @@
                 android:background="@drawable/button3_background" />
 
         <Button
-                android:text="読み込んだマーク一覧"
+                android:text="環境ラベル一覧"
                 android:textSize="20dp"
                 android:textColor="@color/white"
                 android:layout_width="match_parent"
@@ -52,7 +52,7 @@
                 android:background="@drawable/button4_background" />
 
         <Button
-                android:text="賞味・消費期限一覧"
+                android:text="食品の期限一覧"
                 android:textSize="20dp"
                 android:textColor="@color/white"
                 android:layout_width="match_parent"

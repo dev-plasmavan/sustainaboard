@@ -140,8 +140,8 @@ class SdgsmarksResult : Fragment() {
         binding.entryBtn.setOnClickListener {
 
             AlertDialog.Builder(requireContext())
-                .setTitle("SDGs進捗の保存")
-                .setMessage("SDGsのマークを保存してもよろしいですか？")
+                .setTitle("環境ラベルの保存")
+                .setMessage("この環境ラベルを保存してもよろしいですか？")
                     /*
                 .setNeutralButton("マークリストへ") { _, _ ->
                     val transaction = activity?.supportFragmentManager?.beginTransaction()
